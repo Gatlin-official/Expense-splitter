@@ -1,0 +1,22 @@
+{
+  "name": "group-expense-splitter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch-path=server --watch-path=shared server/index.js",
+    "build": "vite build",
+    "start": "node server/index.js --prod",
+    "test": "node --test shared/money.test.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mongodb": "^7.7.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  }
+}
